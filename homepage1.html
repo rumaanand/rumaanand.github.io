@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Meds-Alert Home</title>
+        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+<body>
+  <nav class=" teal lighten-1 nav-extended">
+      <div class="teal lighten-1 nav-wrapper container">
+          <a href="homepage1.html" class="left white-text brand-logo"><img src="Images/Logo_330.png" alt="Unsplashed img 1"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="name"><a class = "name white-text">WELCOME JACK DOW</a></li>
+              <li><a href="setting1.html" class= "white-text">UPDATE SETTINGS</a></li>
+              <li><a href="index.html" class= "white-text">LOGOUT</a><li>
+              
+          </ul>
+         
+      </div>
+      <div class="nav-content container">
+          <ul class="tabs tabs-transparent">
+              <li class="tab"><a target="_parent" class="active" href="homepage1.html">Home</a></li>
+              <li class="tab"><a target="_parent" href="add2.html">Add a Reminder</a></li>
+              <li class="tab"><a target="_parent" href="tracking1.html">Tracking</a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+
+<div class="slider">
+    <ul class="slides">
+        <li>
+            <img src="background1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>Hi Jack Dow!</h3>
+                    
+                    <p>Date: <span id="datetime"></span></p>
+                    <script>
+                    var dt = new Date();
+                    document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+                    </script>
+                     <h3></h3>
+                     <h3></h3>
+                     <h3></h3>
+                    <div class="row center">
+                        <a href="add2.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Add a Reminder</a>
+                    </div>
+                </div>
+                </li>
+        <li>
+            <img  src="background2.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>See how you are doing!</h3>
+                    <h5 class="light grey-text text-lighten-3">Visualization of your medicine adherance</h5>
+                    <div class="row center">
+                        <a href="tracking1.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Tracking</a>
+                    </div>
+                </div>
+                </li>
+        <li>
+            <img   src="background3.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>Customize your setting!</h3>
+                    <h5 class="light grey-text text-lighten-3">Choose your favorite notification sound</h5>
+                    <div class="row center">
+                        <a href="setting1.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Profile Setting</a>
+                    </div>
+                </div>
+                </li>
+    </ul>
+</div>
+
+
+
+        <!--<div id="logo">
+            <img src="images/logo.png" style="max-width: 100%">
+                </div>-->
+    </div>
+    <script type='text/javascript' src='ipod.js'></script>
+    
+   <div class="container">  
+     <ul class="collapsible popout" data-collapsible="accordion">
+         <li>
+             <div class="collapsible-header"><i class="material-icons">view_agenda</i>Today's Reminders</div>
+             <div class="collapsible-body"><span>
+                 <ul class="collection">
+                     <li class="collection-item avatar">
+                         <i class="material-icons circle orange">brightness_5</i>
+                         <span class="title"><b>Morning</b></span>
+                         <p><span >10:00AM Asprin  </span><img src = "pill1.png" style="max-width: 20%" id ="c8"><br>
+                             </p>
+                             <a href="add3.html" class="secondary-content"><i class="material-icons">add_alarm</i></a>
+                             </li>
+                     <li class="collection-item avatar">
+                         <i class="material-icons circle red">brightness_6</i>
+                         <span class="title"><b>Afternoon</b></span>
+                         <p><span >15:00PM Advil   <img src = "pill2.png" style="max-width: 20%" id ="c7"> <br ></span>
+                         </p>
+                         <a href="add3.html" class="secondary-content"><i class="material-icons">add_alarm</i></a>
+                     </li>
+                     <li class="collection-item avatar">
+                         <i class="material-icons circle blue">brightness_4</i>
+                         <span class="title"><b>Evening</b></span>
+                         
+                         <a href="add3.html" class="secondary-content"><i class="material-icons">add_alarm</i></a>
+                     </li>
+                     <li class="collection-item avatar">
+                         <i class="material-icons circle dark blue darken-4">brightness_2</i>
+                         <span class="title"><b>Night</b></span>
+                         
+                         <a href="add3.html" class="secondary-content"><i class="material-icons">add_alarm</i></a>
+                     </li>
+                 </ul>
+                 
+             </span></div>
+         </li>
+         <li>
+             <div class="collapsible-header"><i class="material-icons">view_week</i>Weekly Reminders</div>
+             <div class="collapsible-body"><span>
+                 <table class="centered">
+                     <thead>
+                         <tr>
+                             <th>Sunday</th>
+                             <th>Monday</th>
+                             <th>Tuesday</th>
+                             <th>Wednesday</th>
+                             <th>Thursday</th>
+                             <th>Friday</th>
+                             <th>Saturday</th>
+                         </tr>
+                     </thead>
+                     
+                     <tbody>
+                         <tr>
+                             <td>3/11<br>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/>
+                                     <td>3/12<br><a href="add1.<a href="add1.html">html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/>
+                                             </td>
+                                     <td>3/13 <br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/></td>
+                                     <td>3/14<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/></td>
+                                     <td>3/15<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/>
+                                             </td>
+                                     <td>3/16<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a> <div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/>
+                                             </td>
+                                     <td>3/17<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i> </a><div>10:00AM Asprin </div>
+                                         <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a><div>13:00PM Advil<div/>
+                                             </td>
+                                     </tr>
+                     </tbody>
+                 </table>
+                 
+             </span></div>
+         </li>
+         <li>
+             <div class="collapsible-header"><i class="material-icons">view_comfy</i>Monthly Reminders</div>
+             <div class="collapsible-body"><span>
+                 <table class="centered">
+                     <thead>
+                         <tr>
+                             <th>Sunday</th>
+                             <th>Monday</th>
+                             <th>Tuesday</th>
+                             <th>Wednesday</th>
+                             <th>Thursday</th>
+                             <th>Friday</th>
+                             <th>Sunday</th>
+                         </tr>
+                     </thead>
+                     
+                     <tbody>
+                         <tr>
+                             <td class="blue-grey-text text-lighten-3">2/28</td>
+                             <td class="blue-grey-text text-lighten-3">2/29</td>
+                             <td class="blue-grey-text text-lighten-3">2/30</td>
+                             <td class="blue-grey-text text-lighten-3">2/31</td>
+                             <td>3/1</td>
+                             <td>3/2</td>
+                             <td>3/3</td>
+                         </tr>
+                         <tr>
+                             <td>3/4</td>
+                             <td>3/5</td>
+                             <td>3/6</td>
+                             <td>3/7</td>
+                             <td>3/8</td>
+                             <td>3/9</td>
+                             <td>3/10</td>
+                         </tr>
+                         <tr>
+                             <td>3/11<br>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                             <td>3/12<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                             <td>3/13 <br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a></td>
+                             <td>3/14<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                             <td class = "teal lighten-1 white-text">3/15<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                             <td>3/16<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                             <td>3/17<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a>
+                                 <a href="add1.html"><i class="tiny material-icons icon-c7">brightness_1</i></a>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>3/18<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/19<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/20<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/21<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/22<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/23<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/24<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                         </tr>
+                         <tr>
+                             <td>3/25<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/26<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/27<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td>3/28<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td class="blue-grey-text text-lighten-3">3/29<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td class="blue-grey-text text-lighten-3">3/30<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                             <td class="blue-grey-text text-lighten-3">3/31<br><a href="add1.html"><i class="tiny material-icons icon-c8">brightness_1</i></a></td>
+                         </tr>
+                     </tbody>
+                 </table>
+             </span></div>
+         </li>
+     </ul>
+    
+</div>  
+    
+</body>
+
+
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+
+  </body>
+</html>

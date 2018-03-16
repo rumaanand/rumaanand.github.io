@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Meds-Alert Reminder</title>
+        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+<body>
+
+  <nav class=" teal lighten-1 nav-extended">
+      <div class="teal lighten-1 nav-wrapper container">
+          <a href="homepage1.html" class="left white-text brand-logo"><img src="Images/Logo_330.png" alt="Unsplashed background img 1"></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li class="name"><a class = "name white-text">JACK DOW</a></li>
+              <li><a href="setting1.html" class= "white-text">UPDATE SETTINGS</a></li>
+              <li><a href="index.html" class= "white-text">LOGOUT</a><li>
+          </ul>
+         
+      </div>
+      <div class="nav-content container">
+          <ul class="tabs tabs-transparent">
+              <li class="tab"><a target="_parent" href="homepage1.html">Home</a></li>
+              <li class="tab"><a target="_parent" class="active" href="add2.html">Add a Reminder</a></li>
+              <li class="tab"><a target="_parent"  href="tracking1.html">Tracking</a></li>
+              
+              
+          </ul>
+      </div>
+  </nav>
+
+<div class="row" style="margin-top: 30px">
+    <form class="col s8 offset-s2">
+        <label>Medicine Name</label>
+        <input type="text">
+
+        <label>Dosage</label>
+        <input type="text">
+
+<!-- <label> Appearance:</label>
+        <form action="#">
+            <input name="group1" type="radio" id="test1" />
+            <label for="test1"><img id = “pp1” src = "pill1.png" style="max-width: 50%"></label>
+            <input name="group1" type="radio" id="test2" />
+            <label for="test2"><img id = “pp2” src = "pill2.png" style="max-width: 50%"></label>
+            <input name="group1" type="radio" id="test3" />
+            <label for="test3"><img id = “pp3” src = "pill3.png" style="max-width: 50%"></label>
+            <input name="group1" type="radio" id="test4" />
+            <label for="test4"><img id = “pp4” src = "pill4.png" style="max-width: 50%"></label></form>
+        </div>
+      </form>
+      <form class="col s12"> -->
+
+
+<label> Color Code:</label>
+        <form action="#2">
+          
+            <input name="group2" type="radio" id="test5" />
+            <label for="test5"/><span id="c1"></span></label>
+            <input name="group2" type="radio" id="test6" />
+            <label for="test6"><span id="c2"></span></label>
+            <input name="group2" type="radio" id="test7"  />
+            <label for="test7"><span id="c3"></span></label>
+            <input name="group2" type="radio" id="test8" />
+            <label for="test8"><span id="c4"></span></label>
+            <input name="group2" type="radio" id="test9" />
+            <label for="test9"><span id="c5"></span></label>
+            <input name="group2" type="radio" id="test10" />
+            <label for="test10"><span id="c6"></span></label>
+            <input name="group2" type="radio" id="test11" />
+            <label for="test11"><span id="c7"></span></label>
+            <input name="group2" type="radio" id="test12" />
+            <label for="test12"><span id="c8"></span></label>
+          
+         <form class="col s12">
+        <label>Notification Time(in Hrs)</label>
+        <input type="text" class="timepicker">
+            
+            
+             <label>Repeat</label>
+            <div>
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Never</option>
+                    <option value="2">Every Sunday</option>
+                    <option value="3">Every Monday</option>
+                    <option value="3">Every Tuesday</option>
+                    <option value="3">Every Wednesday</option>
+                    <option value="3">Every Thursday</option>
+                    <option value="3">Every Friday</option>
+                    <option value="3">Every Saturday</option>
+                </select>
+               </div>
+
+        <label>Refill Reminder Date</label>
+        <input type="text" class="datepicker">
+        <label>Frequency</label>
+        
+        <div>
+        <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Daily</option>
+            <option value="2">Weekly</option>
+            <option value="3">Monthly</option>
+        </select>
+      </div>
+        
+        <label>Criticality Level</label>
+        <div>
+        <select>
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+        </select>
+      </div>
+        
+       
+       <label>Dietary restrictions specific to medicine</label>
+        <input type="text">
+        
+        <label>Additional Notes</label>
+        <input type="text">
+
+        <a class="btn waves-effect waves-light" type="submit" name="action" onclick="btnsubmit()">Submit<i class="material-icons right">send</i></a>
+
+        </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>

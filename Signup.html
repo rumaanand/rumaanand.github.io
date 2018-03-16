@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Register</title>
+        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        
+        <nav class=" teal lighten-1 nav-extended">
+            <div class="teal lighten-1 nav-wrapper container">
+                <a href="index.html" class="left white-text brand-logo"><img src="Images/Logo_330.png" alt="Unsplashed background img 1"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <!--<ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="setting.html" class= "white-text">Profile Setting</a></li>
+                    <li><a href="badges.html" class= "white-text">Log In/Sign Up</a></li>
+                </ul>-->
+                
+            </div>
+            <div class="nav-content container">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a target="_parent" href="index.html"><i class="large material-icons">arrow_back</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        
+        <div class="row" style="margin-top:30px">
+            <form class="col s8 offset-s2">
+                
+                    <div class="input-field col s6">
+                        <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                            </div>
+                    <div class="input-field col s6">
+                        <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                            </div>
+                 
+                    <div class="input-field col s12">
+                        <input id="password" type="text" class="validate">
+                            <label for="password">Username</label>
+                    </div>   
+                
+                    <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                                <label for="password">Password</label>
+                    </div>
+                    <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                                <label for="password">Re enter Password</label>
+                        </div>
+                <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                                <label for="email">Email</label>
+                                </div>
+                <div class="row">
+                        <div class="input-field col s12">
+                            <input id=dob type="text" class="datepicker">
+                            <label>Date of Birth</label>
+
+                    <div id="download-button" style="float:left" class="btn waves-effect waves-light teal lighten-1" type="submit" name="action" onclick="btnsubmit1()">Sign Up <i class="material-icons right">send</i> </div>
+                </div>      
+            
+        </form>
+       
+
+        
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        
+    </body>
+</html>
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Meds-Alert Tracking</title>
+        <link rel="icon" type="image/png" href="Images/favicon.png">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    </head>
+    <body>
+        
+        <nav class=" teal lighten-1 nav-extended pin-top">
+            <div class="teal lighten-1 nav-wrapper container">
+                <a href="homepage.html" class="left white-text brand-logo"><img src="Images/Logo_330.png" alt="Unsplashed background img 1"></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="name"><a class = "name white-text">JACK DOW</a></li>
+                    <li><a href="setting1.html" class= "white-text">UPDATE SETTINGS</a></li>
+                    <li><a href="index.html" class= "white-text">LOGOUT</a></li>
+                        </ul>
+                
+            </div>
+            <div class="nav-content container">
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a target="_parent" href="homepage1.html">Home</a></li>
+                    <li class="tab"><a target="_parent"  href="add2.html">Add a Reminder</a></li>
+                    <li class="tab"><a target="_parent" class="active" href="tracking1.html">Tracking</a></li>
+                </ul>
+            </div>
+        </nav>
+         
+        <div class="row" style="margin-top: 30px">
+            <div class="col s8 offset-s2">
+               <div class="section scrollspy" id="graph1">
+                    <div class="card">
+                        <div class="card-content black-text" style="padding-top:5px; padding-bottom: 0px">
+                            <div class="row">
+                                <div class="input-field col s3" style="font-size: 13px">Enter Start Date
+                                    <input id="StartDate" type="text" class="datepicker"></div>
+                                
+                                <div class="input-field col s3" style="font-size: 13px">Enter End Date
+                                    <input id="last_name" type="text" class="datepicker"></div>
+                                
+                                <div class="input-field col s3" style="font-size: 13px">Medicine Name
+                                    <select>
+                                        <option value="" disabled selected></option>
+                                        <option value="1">All</option>
+                                        <option value="1">Advil</option>
+                                        <option value="2">Paracetamol</option>
+                                        <option value="3">Aceclofenac</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s3" style="font-size: 13px">Criticality
+                                    <select>
+                                        <option value="" disabled selected></option>
+                                        <option value="1">All</option>
+                                        <option value="1">Low</option>
+                                        <option value="2">Medium</option>
+                                        <option value="3">High</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col s8">
+                    <div class="section scrollspy" style="padding-left: 3rem;">
+                        <canvas id="myChart2"> </canvas>
+                        <br><br><br>
+                    </div>
+                    
+                    <div class="section scrollspy" id="graph2" style="padding-left: 3rem;">
+                        <canvas id="myChart3"> </canvas>
+                        <br><br><br>
+                    </div>
+                    
+                    <div class="section scrollspy" id="graph3" style="padding: 6rem; padding-left: 9rem;">
+                        <canvas id="myChart1"> </canvas>
+                        <br><br><br>
+                    </div>
+
+                </div>
+                
+                
+                <div class="col s3" style="float: right; margin-right: 40px;">
+                    <div class="pinned">
+                        <div class="card teal lighten-2" style="margin: 1rem;">
+                            <div class="card-content white-text" style="padding: 4%; padding-bottom: 2%;">
+                                <span class="card-title center" style="font-size: 14px;">SHARE WITH A DOCTOR?</span>
+                            </div>
+                            
+                            <div class="card-action white">
+                                <div class="input-field">
+                                    <input id="email" type="email" class="validate"><label for="email">Email</label>
+                                        </div>
+                                <div class="row center">
+                                    <div class="col s12">
+                                        <a style="font-size: 10px; padding: 0 1.8rem;" class="btn waves-effect waves-light" type="submit" name="action" onclick="st()">Send Now<i class="material-icons right" style="padding-left: 5px">send</i></a>
+                                    </div>
+                                </div>
+                                <div class="row center">
+                                    <div class="col s12">
+                                        <a style="font-size: 10px; padding: 0 1.8rem;" class="btn waves-effect waves-light" type="submit" name="action" onclick="dl()" >Download<i class="material-icons right">file_download</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="section table-of-contents">
+                            <li><a href="#graph1" class="active">Last Week</a></li>
+                            <li><a href="#graph2">Last Six Month</a></li>
+                            <li><a href="#graph3">Overall</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        
+    </body>
+    
+</html>
+
+
